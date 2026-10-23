@@ -145,6 +145,115 @@
       border-radius: 999px;
     }
 
+
+    .nomination-guidelines {
+      max-width: 820px;
+      margin: 24px auto 0;
+      padding: 22px 26px;
+      text-align: left;
+      color: var(--text-color);
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid var(--border-color);
+      border-left: 5px solid var(--gold);
+      border-radius: 12px;
+      box-shadow: 0 8px 22px rgba(65, 0, 29, 0.08);
+    }
+
+    .nomination-guidelines h2 {
+      margin: 0 0 14px;
+      color: var(--primary-color);
+      font-size: 1.2rem;
+      line-height: 1.35;
+    }
+
+    .nomination-guidelines ol {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    .nomination-guidelines li {
+      margin: 0 0 10px;
+      padding-left: 3px;
+    }
+
+    .nomination-guidelines li:last-child {
+      margin-bottom: 0;
+    }
+
+    .nomination-guidelines ul {
+      margin: 8px 0 0;
+      padding-left: 22px;
+      list-style-type: disc;
+    }
+
+    .nomination-guidelines ul li {
+      margin-bottom: 5px;
+    }
+
+
+    .nomination-downloads {
+      margin: 18px 0 0;
+      padding: 16px;
+      background: #fffaf0;
+      border: 1px solid #ead9ad;
+      border-radius: 10px;
+    }
+
+    .nomination-downloads h3 {
+      margin: 0 0 8px;
+      color: var(--primary-color);
+      font-size: 1.05rem;
+    }
+
+    .nomination-downloads p {
+      margin: 0 0 12px;
+      color: var(--text-color);
+      line-height: 1.5;
+    }
+
+    .nomination-download-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .nomination-download-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 15px;
+      border-radius: 7px;
+      background: var(--primary-color);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .nomination-download-links a:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+
+    .nomination-download-links a.pdf-download {
+      background: #8f1d2c;
+    }
+
+    .nomination-deadline {
+  margin: 16px 0 0;
+  padding: 12px 14px;
+  color: #ffffff !important;
+  background: linear-gradient(
+    120deg,
+    var(--secondary-color),
+    var(--secondary-color)
+  );
+  border-radius: 8px;
+  font-weight: 800;
+  text-align: center;
+}
+
     .form-container {
       width: 100%;
       max-width: 820px;
@@ -322,7 +431,7 @@
       min-height: 48px;
       padding: 13px 18px;
       color: #fff;
-      background: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+      background: linear-gradient(120deg, var(--secondary-color), var(--secondary-color));
       border: 0;
       border-radius: 8px;
       box-shadow: 0 5px 14px rgba(112, 0, 47, 0.18);
@@ -442,7 +551,7 @@
       <div class="corner-logo"><img src="assets/logo-left.png" alt="Thiagarajar College logo" width="72" height="72"></div>
       <a class="brand" href="index.html" aria-label="Thiagarajar College home">
         <strong>Thiagarajar College, Madurai-09</strong>
-        <small>A++ Grade in 4th Cycle of NAAC Accreditation<br>3.5 Star Status IIC in 2026 · 20th Rank in NIRF 2025</small>
+        <small>A++ Grade in 4th Cycle of NAAC Accreditation<br>3.5 Star Status IIC 2026 · 20th Rank in NIRF 2025</small>
       </a>
       <div class="corner-logo"><img src="assets/logo-right.png" alt="College event or association logo" width="72" height="72"></div>
     </div>
@@ -450,10 +559,38 @@
 
   <header class="page-intro">
     <div class="eyebrow">Reconnect · Celebrate · Contribute</div>
-    <h1>THIAGARAJAR COLLEGE-DAA 2026 </h1>
-    <h2>(Distinguished Alumni Award)</h2>
+    <h1>Distinguished Alumni Award (DAA)-2026 </h1>
+    <h2>(Online Application)</h2>
     <p>In order to recognize and honor alumni who have brought laurels to the Almamater, it is proposed to present Thiagarajar College-Distinguished Alumni Award (Thiagarajar College-DAA)</p>
     <p> The award is initiated with a motive to honor alumni who have demonstrated excellence and success in their chosen career. We hope this shall nurture the young and future graduates of Thiagarajar College with experience and resources through mentorships and guidance while upholding the reputation and legacy of our Institution</p>
+    <section class="nomination-guidelines" aria-labelledby="guidelines-title">
+      <h2 id="guidelines-title">General Instructions for Nomination</h2>
+      <ol>
+        <li>Self-nominations and nominations by referral are allowed.</li>
+        <li>
+          Referral nominations for the Distinguished Alumni Award (DAA) may be made by:
+          <ul>
+            <li>An alumnus/alumna.</li>
+            <li>Alumni Associations through their Presidents.</li>
+            <li>Faculty (retired or in service) of the Alma Mater.</li>
+            <li>The head or an appropriate person of an organization where the alumna/alumnus concerned has been working.</li>
+          </ul>
+        </li>
+        <li>
+          Any person who has received a degree from the Alma Mater is eligible for consideration for the DAA, except an alumnus/alumna who is or has been an employee of the institution. This exception may be waived only where the person has accomplished work of a truly outstanding, highest order that is widely recognized.
+        </li>
+        <li>The nominee should be <strong>above 30 years of age as on 30.05.2026</strong>.</li>
+      </ol>
+      <div class="nomination-downloads" aria-labelledby="nomination-download-title">
+        <h3 id="nomination-download-title">Download Nomination Form</h3>
+        <p>Applicants may download the nomination form in Word or PDF format, complete it, and follow the submission instructions provided in the form.</p>
+        <div class="nomination-download-links">
+          <a href="assets/DAA-2026-Nomination-Form.docx" download="DAA-2026-Nomination-Form.docx" aria-label="Download nomination form in Word format">&#128196; Download Word Document</a>
+          <a class="pdf-download" href="assets/DAA-2026-Nomination-Form.pdf" download="DAA-2026-Nomination-Form.pdf" aria-label="Download nomination form in PDF format">&#128196; Download PDF</a>
+        </div>
+      </div>
+      <p class="nomination-deadline">Last date for nomination: 30.11.2026 (Monday) by 5:00 p.m.</p>
+    </section>
     <div class="gold-rule" aria-hidden="true"></div>
   </header>
 
@@ -466,10 +603,6 @@
         <legend>01 · Personal & Academic Details</legend>
         <p class="section-help">Tell us who you are and when you graduated.</p>
         <div class="form-grid">
-          <div class="form-group">
-            <label for="fullName">Name of the Nominee<span aria-hidden="true">*</span></label>
-            <input type="text" id="fullName" name="fullName" autocomplete="name" required maxlength="120" placeholder="Enter your full name">
-          </div>
           <div class="form-group">
             <label for="degree">Degree Obtained from Thiagarajar College<span aria-hidden="true">*</span></label>
             <select id="degree" name="degree" required>
@@ -581,7 +714,7 @@
       </fieldset>
 
       <fieldset>
-        <legend>02 · Apply for Alumni Award</legend>
+        <legend>02 · Category of Nomination</legend>
         <div class="form-group">
           <label for="category">Choose category<span aria-hidden="true">*</span></label>
           <select id="category" name="category" required>
@@ -637,7 +770,26 @@
       </fieldset>
 
       <fieldset>
-        <legend>04 · Contribution to the College</legend>
+        <legend>04 · Nomination Details</legend>
+        <div class="form-grid">
+            <div class="form-group">
+            <label for="nomination">Nominated by<span aria-hidden="true">*</span></label>
+            <select id="nomination" name="nomination" required>
+              <option value="" disabled selected>-- Select a Category --</option>
+          <option value="self">Self Nomination</option>
+          <option value="Others">Others</option>
+            </select>
+        </div>
+          <div class="form-group conditional" id="associationGroup" hidden>
+            <label for="association">Your association to the Nominee and your contact information<span aria-hidden="true">*</span></label>
+            <textarea id="association" name="association" maxlength="150" placeholder="Describe your association to the nominee and enter your contact information" required></textarea>
+            <p class="field-hint" id="associationHint">Required when you select “Others”.</p>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>05 · Contribution to the College</legend>
         <p class="section-help">Let us know how you may be able to support the college.</p>
         <div class="form-group">
           <label for="contribution">Would you like to contribute? <span aria-hidden="true">*</span></label>
@@ -654,11 +806,13 @@
       </fieldset>
 
       <fieldset>
-        <legend>05 · Supporting Documents</legend>
+        <legend>06 · Supporting Documents</legend>
         <div class="form-group">
-          <label for="pdfFiles">Reference documents <span class="optional">(Detailed CV & Achievements)</span></label>
+          <label for="pdfFiles">Upload the Nomination form<span class="optional">(Scanned Copy)</span></label>
           <input type="file" id="pdfFiles" name="pdfFiles" accept="application/pdf,.pdf" multiple aria-describedby="fileHint fileStatus">
-          <p class="field-hint" id="fileHint">PDF files only · Maximum 4 files · 10 MB total.</p>
+          <p class="field-hint" id="fileHint">Please fill all the details and attach relevant documents and submit as a single Pdf file.</p>
+          <p>Name the File as Name_Category of nomination.pdf for our reference.</p>
+          <p>Files which do not satisfy the submission requirement shall not be accepted.</p>
           <div id="fileStatus" class="field-hint" role="status" aria-live="polite">No files selected.</div>
           <ul id="fileList" class="file-list" aria-label="Selected PDF files"></ul>
         </div>
@@ -683,6 +837,9 @@
       const category = document.getElementById("category");
       const awardGroup = document.getElementById("awardReasonGroup");
       const awardReason = document.getElementById("awardReason");
+      const nominationSelect = document.getElementById("nomination");
+      const associationGroup = document.getElementById("associationGroup");
+      const associationTextarea = document.getElementById("association");
       const contribution = document.getElementById("contribution");
       const contributionGroup = document.getElementById("contributionDetailsGroup");
       const contributionDetails = document.getElementById("contributionDetails");
@@ -744,6 +901,11 @@
         awardReason.required = needsAwardReason;
         if (!needsAwardReason) awardReason.value = "";
 
+        const needsAssociation = nominationSelect.value === "Others";
+        associationGroup.hidden = !needsAssociation;
+        associationTextarea.required = needsAssociation;
+        if (!needsAssociation) associationTextarea.value = "";
+
         const needsContributionDetails = Boolean(contribution.value);
         contributionGroup.hidden = !needsContributionDetails;
         contributionDetails.required = needsContributionDetails;
@@ -761,6 +923,7 @@
       }
 
       category.addEventListener("change", updateConditionalFields);
+      nominationSelect.addEventListener("change", updateConditionalFields);
       contribution.addEventListener("change", updateConditionalFields);
       updateConditionalFields();
 
@@ -774,7 +937,7 @@
 
         if (files.length > MAX_FILES || totalBytes > MAX_TOTAL_BYTES || invalidType) {
           const issues = [];
-          if (files.length > MAX_FILES) issues.push("maximum 4 PDF files");
+          if (files.length > MAX_FILES) issues.push("maximum 1 PDF files");
           if (totalBytes > MAX_TOTAL_BYTES) issues.push("10 MB total size limit");
           if (invalidType) issues.push("PDF files only");
           const message = "Please correct your file selection: " + issues.join(", ") + ".";
@@ -807,6 +970,8 @@
           currentWork: document.getElementById("currentWork").value.trim(),
           category: category.value,
           awardReason: awardReason.value.trim(),
+          nomination: nominationSelect.value,
+          association: associationTextarea.value.trim(),
           contribution: contribution.value,
           contributionDetails: contributionDetails.value.trim(),
           email: document.getElementById("email").value.trim(),
@@ -902,6 +1067,8 @@
         y = addPdfLine(doc, "Current work / designation", data.currentWork, y);
         y = addPdfLine(doc, "Application category", data.category, y);
         if (data.category) y = addPdfLine(doc, "Award application reason", data.awardReason, y);
+        y = addPdfLine(doc, "Nominated by", data.nomination, y);
+        if (data.nomination === "Others") y = addPdfLine(doc, "Nominator association and contact", data.association, y);
         y = addPdfLine(doc, "Contribution type", data.contribution, y);
         y = addPdfLine(doc, "Contribution details", data.contributionDetails, y);
         y = addPdfLine(doc, "Email", data.email, y);
