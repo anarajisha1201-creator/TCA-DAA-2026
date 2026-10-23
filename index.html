@@ -601,8 +601,12 @@
     <form id="alumniForm">
       <fieldset>
         <legend>01 · Personal & Academic Details</legend>
-        <p class="section-help">Tell us who you are and when you graduated.</p>
+        <p class="section-help">Tell us about the nominee and their academic background.</p>
         <div class="form-grid">
+          <div class="form-group">
+            <label for="fullName">Name of the Nominee <span aria-hidden="true">*</span></label>
+            <input type="text" id="fullName" name="fullName" maxlength="150" required autocomplete="name" placeholder="Enter the nominee’s full name">
+          </div>
           <div class="form-group">
             <label for="degree">Degree Obtained from Thiagarajar College<span aria-hidden="true">*</span></label>
             <select id="degree" name="degree" required>
@@ -1060,7 +1064,7 @@
 
         doc.setTextColor(40, 35, 42);
         doc.setFontSize(10);
-        y = addPdfLine(doc, "Applicant name", data.fullName, y);
+        y = addPdfLine(doc, "Name of the Nominee", data.fullName, y);
         y = addPdfLine(doc, "Degree", data.degree, y);
         y = addPdfLine(doc, "Department", data.department, y);
         y = addPdfLine(doc, "Year of passing", data.batch, y);
