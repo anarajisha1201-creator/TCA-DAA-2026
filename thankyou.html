@@ -7,7 +7,7 @@
   <title>THIAGARAJAR COLLEGE-DAA 2026 - Application Receipt</title>
   <style>
     :root {
-      --primary: #890039;
+      --primary-color: #890039;
       --primary-dark: #002a4d;
       --secondary: #004c94;
       --gold: #c9a24a;
@@ -125,7 +125,7 @@
         <div class="corner-logo"><img class="logo" src="assets/logo-left.png" alt="Thiagarajar College logo" width="72" height="72"></div>
         <a class="brand" href="index.html" aria-label="Thiagarajar College home">
           <strong>Thiagarajar College, Madurai-09</strong>
-          <small>A++ Grade in 4th Cycle of NAAC Accreditation<br>3.5 Star Status IIC in 2026 · 20th Rank in NIRF 2025</small>
+          <small>A++ Grade in 4th Cycle of NAAC Accreditation<br>3.5 Star Status IIC 2026 · 20th Rank in NIRF 2025</small>
         </a>
         <div class="corner-logo"><img class="logo" src="assets/logo-right.png" alt="College event or association logo" width="72" height="72"></div>
       </div>
@@ -136,7 +136,7 @@
         <div class="check" aria-hidden="true">✓</div>
         <div class="eyebrow">Thiagarajar College-DAA 2026</div>
         <h1>Application Receipt</h1>
-        <p class="subtitle" id="successMessage">Your application has been submitted successfully.</p>
+        <p class="subtitle" id="successMessage">Your application PDF has been saved successfully. Please retain this receipt for your records.</p>
       </section>
 
       <div class="receipt-meta">
@@ -152,6 +152,8 @@
         <div class="detail"><span class="label">Year of passing</span><span class="value" id="batch">—</span></div>
         <div class="detail"><span class="label">Current work / designation</span><span class="value" id="currentWork">—</span></div>
         <div class="detail"><span class="label">Application category</span><span class="value" id="category">—</span></div>
+        <div class="detail"><span class="label">Nominated by</span><span class="value" id="nomination">—</span></div>
+        <div class="detail full" id="associationRow"><span class="label">Nominator association and contact information</span><span class="value" id="association">—</span></div>
         <div class="detail"><span class="label">Contribution type</span><span class="value" id="contribution">—</span></div>
         <div class="detail full" id="awardRow"><span class="label">Award application details</span><span class="value" id="awardReason">—</span></div>
         <div class="detail full" id="contributionRow"><span class="label">Contribution details</span><span class="value" id="contributionDetails">—</span></div>
@@ -211,10 +213,14 @@
       setText("registrationId", sessionStorage.getItem("tcaAlumniRegistrationId") || "Not provided by registration system");
       const submittedAt = data.submittedAt ? new Date(data.submittedAt) : new Date();
       setText("submissionDate", isNaN(submittedAt.getTime()) ? new Date().toLocaleString() : submittedAt.toLocaleString());
-      ["fullName", "degree", "department", "batch", "currentWork", "category", "contribution", "contributionDetails", "awardReason", "email", "phone", "linkedin", "address"].forEach(key => setText(key, data[key]));
+      ["fullName", "degree", "department", "batch", "currentWork", "category", "nomination", "association", "contribution", "contributionDetails", "awardReason", "email", "phone", "linkedin", "address"].forEach(key => setText(key, data[key]));
 
+      // Match the conditional fields used by index.html.
       if (!data.awardReason) document.getElementById("awardRow").style.display = "none";
+      if (!data.association || data.nomination !== "Others") document.getElementById("associationRow").style.display = "none";
       if (!data.contributionDetails) document.getElementById("contributionRow").style.display = "none";
+      if (data.nomination === "self") setText("nomination", "Self Nomination");
+      if (data.nomination === "Others") setText("nomination", "Others");
 
       document.getElementById("downloadBtn").addEventListener("click", () => {
         // In the browser print dialog, choose "Save as PDF" to download the receipt.
