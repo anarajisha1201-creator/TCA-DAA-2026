@@ -67,10 +67,10 @@
     .check {
       width: 56px; height: 56px; margin: 0 auto 10px; display: grid; place-items: center;
       border-radius: 50%; border: 2px solid var(--gold); background: #fbf5e8;
-      color: var(--primary); font-size: 30px; font-weight: 800;
+      color: var(--primary-color); font-size: 30px; font-weight: 800;
     }
-    .eyebrow { color: var(--primary); font-size: .75rem; letter-spacing: .14em; font-weight: 800; text-transform: uppercase; }
-    h1 { margin: 5px 0; color: var(--primary); font-size: clamp(1.6rem, 4vw, 2.3rem); }
+    .eyebrow { color: var(--primary-color); font-size: .75rem; letter-spacing: .14em; font-weight: 800; text-transform: uppercase; }
+    h1 { margin: 5px 0; color: var(--primary-color); font-size: clamp(1.6rem, 4vw, 2.3rem); }
     .subtitle { margin: 0; color: var(--muted); }
     .receipt-meta {
       display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px;
@@ -79,7 +79,7 @@
     }
     .meta-label { display: block; color: var(--muted); font-size: .78rem; }
     .meta-value { display: block; font-weight: 800; color: var(--primary-dark); overflow-wrap: anywhere; }
-    h2 { margin: 22px 0 10px; padding-bottom: 7px; border-bottom: 1px solid var(--border); color: var(--primary); font-size: 1rem; }
+    h2 { margin: 22px 0 10px; padding-bottom: 7px; border-bottom: 1px solid var(--border); color: var(--primary-color); font-size: 1rem; }
     .details { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px 24px; }
     .detail { min-width: 0; }
     .detail .label { display: block; color: var(--muted); font-size: .8rem; }
@@ -90,10 +90,10 @@
     button, .back {
       display: inline-flex; justify-content: center; align-items: center; min-height: 44px;
       padding: 11px 18px; border: 1px solid var(--gold); border-radius: 8px;
-      background: linear-gradient(120deg, var(--primary), var(--secondary));
+      background: linear-gradient(120deg, var(--primary-color), var(--secondary));
       color: white; font: inherit; font-weight: 750; text-decoration: none; cursor: pointer;
     }
-    .back { background: white; color: var(--primary); border-color: var(--border); }
+    .back { background: white; color: var(--primary-color); border-color: var(--border); }
     .footer { text-align: center; color: var(--muted); font-size: .82rem; padding: 4px 0 14px; }
     #notSubmitted { display: none; text-align: center; padding: 24px; }
     @media(max-width: 560px) {
@@ -144,9 +144,9 @@
         <div><span class="meta-label">Submission date</span><span class="meta-value" id="submissionDate">—</span></div>
       </div>
 
-      <h2>Applicant & Academic Details</h2>
+      <h2>Nominee & Academic Details</h2>
       <div class="details">
-        <div class="detail"><span class="label">Full name</span><span class="value" id="fullName">—</span></div>
+        <div class="detail"><span class="label">Name of the Nominee</span><span class="value" id="fullName">—</span></div>
         <div class="detail"><span class="label">Degree</span><span class="value" id="degree">—</span></div>
         <div class="detail"><span class="label">Department</span><span class="value" id="department">—</span></div>
         <div class="detail"><span class="label">Year of passing</span><span class="value" id="batch">—</span></div>
